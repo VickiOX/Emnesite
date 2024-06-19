@@ -1,0 +1,279 @@
+header, main, footer {
+max-width: 1920px;
+margin: auto;
+}
+body{
+    font-family: 'Labrada', serif;
+    color:#111111e7;
+    background-color: #f6f5ea;
+}
+        h1{
+            font-family: 'Lobster', cursive;
+            font-size: 110px;
+            text-align: center;
+            line-height: 280%;
+            
+        }
+
+
+main > section > .col {
+    border: 1px solid #11111155;
+}
+
+.menu li{
+    text-align: center;
+    border: 1px solid #11111155;
+    font-size: 30px;
+    padding: 20px 0;
+    
+}
+
+.liste{
+    display:block;
+    margin-left: 200px;
+}
+
+.col{
+    padding:10px;
+}
+
+.logo{
+    width: calc(100% - 32px);
+    padding: 15px;
+}
+
+
+.box{
+    position: relative;
+    overflow: hidden;
+    margin:auto;
+    display: flex;
+    justify-content:center;
+   
+     
+}
+
+h1, .logo {
+    border: 1px solid #11111155;
+}
+
+h2{
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-size: 70px;
+}
+
+h3{
+    font-size: 35px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    text-decoration: underline;
+    margin:45px;
+    margin-top:80px;
+}
+
+.img_contact{
+    max-width: 180px;
+}
+
+.box img{
+    width: 100%;
+    transition: all linear 0.7s;
+}
+
+img.hover-img{
+position: absolute;
+top:0;
+
+opacity: 0;
+
+
+}
+
+.box:hover img{
+    opacity:0;
+}
+
+.box:hover img.hover-img{
+    opacity: 1;
+}
+
+.img-menu img{
+max-height: 350px;
+object-fit: cover;
+margin:auto;
+}
+
+.img-menu a{
+    font-size: 30px;
+    text-align: center;
+}
+
+.img-menu .dotted{
+    margin:50px;
+    padding: 20px;
+    margin-top:90px;
+}
+
+.dagens_ret_text{
+    text-align: center;
+    max-width: 800px;
+    margin:auto;
+}
+
+.dagens_ret_img img{
+    max-width: 500px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.rate {
+    float: none;
+    height: 40px;
+    padding: 0 10px;
+    width: 157px;
+    margin: auto;
+}
+
+.text{
+    margin:auto;
+    text-align: center;
+}
+
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+.copyright{
+font-size:25px;
+text-align: center;
+border: 1px solid #11111155 ; 
+padding: 20px 0;
+}
+
+.top-spot {
+    margin:40px;
+}
+
+.top-spot p{
+    font-size: 20px;
+    margin:45px;
+    
+
+}
+
+.top-spot p:nth-child(odd){
+    border-bottom: 1px dotted #11111155;
+}
+
+.dotted {
+    margin:40px;
+    border:1px dotted #11111155;
+}
+
+.contact-img {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 0 0;
+}
+.contact p {
+    border-bottom: 1px dotted #11111155;
+    text-align: center;
+    font-size:25px ;
+    
+}
+
+a:visited{
+    color:rgb(33, 33, 33)
+}
+
+
+
+.link_hover_aftensmad:hover{
+    color:#98d3b0c8;
+}
+
+.link_hover_forretter:hover{
+    color:#f5a26bbc;
+}
+.link_hover_desserter:hover{
+    color:#f373cdbf;
+}
+a:hover{
+    color: rgba(66, 65, 65, 0.787);
+}
+
+a{
+    color:rgb(33, 33, 33)
+}
+
+@media (max-width:1000px) {
+    h1{
+        font-size: 62px;
+        line-height: 161px;
+    }
+
+    .menu li{
+        list-style: none;
+    }
+
+    .img-menu .col:nth-child(4){
+        order:2;
+    }
+    .img-menu .col:nth-child(5){
+        order:4;
+    }
+    .img-menu .col:nth-child(6){
+        order:6;
+    }
+    .img-menu .col:nth-child(1){
+        order:1;
+    }
+    .img-menu .col:nth-child(2){
+        order:3;
+    }
+    .img-menu .col:nth-child(3){
+        order:5;
+    }
+
+    .img-menu{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .hover-img {
+        opacity: 1!important;
+    }
+    main {margin: 50px}
+}
